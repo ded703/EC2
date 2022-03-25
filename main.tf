@@ -11,8 +11,7 @@ terraform {
 
 provider "aws" {
   region = "eu-west-1"
-  profile = "apprentices"
-}
+  }
 
 resource "aws_instance" "app_server" {
   ami           = "ami-0069d66985b09d219"
