@@ -10,13 +10,13 @@ terraform {
 
 
 provider "aws" {
-  region = "eu-west-1"
+  region = "eu-central-1"
   }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-0069d66985b09d219"
+  ami           = "ami-0dcc0ebde7b2e00db"
   instance_type = "t3.micro"
-  subnet_id     = "subnet-021b967ea4fcad010"
+  subnet_id     = "subnet-0e22f4a02f624d1f0"
 
   tags = {
     Name = "ExampleAppServerInstance"
